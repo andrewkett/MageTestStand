@@ -28,7 +28,7 @@ cp -rf ${WORKSPACE} ${BUILDENV}/.modman/
 ${BUILDENV}/install.sh
  
 cd ${BUILDENV}/htdocs
-${BUILDENV}/bin/phpunit --colors -d display_errors=1 --coverage-clover ${WORKSPACE}/coverage.clover
+${BUILDENV}/bin/phpunit --colors -d display_errors=1 --coverage-clover="${WORKSPACE}/coverage.clover"
 
 
 cd ${WORKSPACE}
